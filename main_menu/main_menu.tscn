@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://j87n4lychbt5"]
 
 [ext_resource type="Script" path="res://main_menu/version_label.gd" id="1_5huni"]
-[ext_resource type="PackedScene" uid="uid://bdnyglk1i1cxl" path="res://gameplay/gameplay.tscn" id="2_5nvqq"]
 [ext_resource type="Script" path="res://main_menu/menu_options.gd" id="2_gpv3d"]
 [ext_resource type="PackedScene" uid="uid://dpicmplffpula" path="res://settings/settings.tscn" id="3_2osu0"]
+[ext_resource type="PackedScene" uid="uid://cudp27igehpwh" path="res://scenes/level_one/tenya.tscn" id="3_bqm67"]
 [ext_resource type="PackedScene" uid="uid://cee5dna3u27jf" path="res://assets/select_sfx.tscn" id="4_82nwe"]
 
 [node name="MainMenu" type="Control"]
@@ -16,11 +16,11 @@ grow_vertical = 2
 
 [node name="BG" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = -34.0
-offset_top = -28.0
-offset_right = 1318.0
-offset_bottom = 758.0
-color = Color(0.227451, 0.368627, 0.521569, 1)
+offset_left = 5.0
+offset_top = 2.0
+offset_right = 1005.0
+offset_bottom = 502.0
+color = Color(0.145098, 0.223529, 0.0941176, 1)
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 1
@@ -33,7 +33,7 @@ offset_right = 65.5
 offset_bottom = 135.0
 grow_horizontal = 2
 theme_type_variation = &"HeaderLarge"
-text = "YOUR GAME"
+text = "Vermen"
 horizontal_alignment = 1
 
 [node name="Credit" type="Label" parent="."]
@@ -46,35 +46,23 @@ offset_top = 156.0
 offset_right = 59.5
 offset_bottom = 182.0
 grow_horizontal = 2
-text = "A game by YOU"
-
-[node name="Controls" type="Label" parent="."]
-layout_mode = 0
-offset_left = 843.0
-offset_top = 573.0
-offset_right = 1251.0
-offset_bottom = 677.0
-text = "CONTROLS
-Move: WASD | Accept: J | Cancel: K | Pause: P
-Move: Arrow Keys | Accept: Z | Cancel: Z | Pause: Esc
-Gamepads work too!"
-horizontal_alignment = 2
+text = "A game by emkreimer"
 
 [node name="Instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 570.0
-offset_right = 365.0
-offset_bottom = 674.0
+offset_left = 23.0
+offset_top = 433.0
+offset_right = 334.0
+offset_bottom = 537.0
 text = "INSTRUCTIONS
 Collect all the things!"
 
 [node name="Version" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1060.0
-offset_top = 20.0
-offset_right = 1258.0
-offset_bottom = 46.0
+offset_left = 777.0
+offset_top = 21.0
+offset_right = 975.0
+offset_bottom = 47.0
 text = "Version: [set dynamically]"
 horizontal_alignment = 2
 script = ExtResource("1_5huni")
@@ -103,7 +91,7 @@ grow_vertical = 2
 shortcut_context = NodePath("Start")
 alignment = 1
 script = ExtResource("2_gpv3d")
-gameplay_scene = ExtResource("2_5nvqq")
+gameplay_scene = ExtResource("3_bqm67")
 settings_scene = ExtResource("3_2osu0")
 
 [node name="Start" type="Button" parent="MenuOptions"]

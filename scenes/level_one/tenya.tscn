@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://cudp27igehpwh"]
+
+[ext_resource type="Texture2D" uid="uid://dqfkyfwg6c33k" path="res://visuals/outer_space.png" id="1_ps34f"]
+
+[node name="tenya" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(500, 250)
+texture = ExtResource("1_ps34f")
