@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqfkyfwg6c33k"
-path="res://.godot/imported/outer_space.png-f32ed84666f668760bf26ab7e75f9bd5.ctex"
+uid="uid://ppkxcobop05q"
+path="res://.godot/imported/other_lev_build.png-8c1db70a7050112ac76b030929bd3162.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://visuals/outer_space.png"
-dest_files=["res://.godot/imported/outer_space.png-f32ed84666f668760bf26ab7e75f9bd5.ctex"]
+source_file="res://visuals/tileset/other_lev_build.png"
+dest_files=["res://.godot/imported/other_lev_build.png-8c1db70a7050112ac76b030929bd3162.ctex"]
 
 [params]
 
