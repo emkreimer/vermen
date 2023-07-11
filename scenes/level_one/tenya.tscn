@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://cudp27igehpwh"]
+[gd_scene load_steps=9 format=3 uid="uid://cudp27igehpwh"]
 
-[ext_resource type="Texture2D" uid="uid://c873kj7sxl51p" path="res://visuals/background/stars.png" id="1_safb3"]
-[ext_resource type="Texture2D" uid="uid://dsrb6gu6a8a1f" path="res://visuals/background/dust (copy).png" id="2_lgqch"]
-[ext_resource type="Texture2D" uid="uid://bgdm851rm2byd" path="res://visuals/background/planets.png" id="3_dy1lv"]
+[ext_resource type="Texture2D" uid="uid://belsyqq5ikicp" path="res://visuals/background/red/Space Background(6).png" id="1_plr6o"]
+[ext_resource type="Texture2D" uid="uid://doc86vkxb28ya" path="res://visuals/background/red/stars.png" id="2_cexhb"]
+[ext_resource type="Texture2D" uid="uid://b2aq4nan1gwxh" path="res://visuals/background/red/Space Background(9).png" id="3_hth1n"]
+[ext_resource type="Texture2D" uid="uid://bwar2s53in0ah" path="res://visuals/background/red/Space Background(16).png" id="4_aymge"]
 [ext_resource type="Texture2D" uid="uid://dywwgcyl586xn" path="res://visuals/tileset/main_lev_build.png" id="4_nbedc"]
 [ext_resource type="PackedScene" uid="uid://ctmctvaavqma5" path="res://scenes/level_one/player.tscn" id="5_6ungl"]
 
@@ -6375,22 +6376,30 @@ sources/0 = SubResource("TileSetAtlasSource_ogyet")
 motion_scale = Vector2(0.1, 0.1)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(500, 250)
-texture = ExtResource("1_safb3")
+position = Vector2(500, 248)
+texture = ExtResource("1_plr6o")
 
 [node name="ParallaxLayer2s" type="ParallaxLayer" parent="ParallaxBackground"]
 position = Vector2(500, 250)
 motion_scale = Vector2(0.2, 0.2)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2s"]
-texture = ExtResource("2_lgqch")
+texture = ExtResource("2_cexhb")
 
 [node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(0.4, 0.4)
+motion_scale = Vector2(0.3, 0.3)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
 position = Vector2(500, 250)
-texture = ExtResource("3_dy1lv")
+texture = ExtResource("3_hth1n")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+position = Vector2(540, 232)
+rotation = 3.14159
+texture = ExtResource("4_aymge")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 offset = Vector2(500, 250)
@@ -6398,10 +6407,10 @@ position_smoothing_enabled = true
 rotation_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
+position = Vector2(0, -30)
 tile_set = SubResource("TileSet_dvuiq")
-collision_visibility_mode = 1
 format = 2
-layer_0/tile_data = PackedInt32Array(2031616, 327680, 2, 2031617, 393216, 2, 2031618, 458752, 2, 2031619, 524288, 2, 2031620, 589824, 2, 2031621, 655360, 2, 2031622, 720896, 2, 2031623, 786432, 2, 2031624, 393216, 2, 2031625, 458752, 2, 2031626, 524288, 2, 2031627, 589824, 2, 2031628, 655360, 2, 2031629, 720896, 2, 2031630, 786432, 2, 2031631, 851968, 2, 2031632, 917504, 2, 2031633, 983040, 2, 2031634, 1048576, 2, 2031635, 1114112, 2, 2031636, 1179648, 2, 2031637, 1245184, 2, 2031638, 1310720, 2, 2031639, 1376256, 2, 2031640, 1441792, 2)
+layer_0/tile_data = PackedInt32Array(2031616, 327680, 2, 2097152, 327680, 3, 2031617, 393216, 2, 2097153, 393216, 3, 2031618, 458752, 2, 2097154, 458752, 3, 2031619, 524288, 2, 2097155, 524288, 3, 2031620, 589824, 2, 2097156, 589824, 3, 2031621, 655360, 2, 2097157, 655360, 3, 2031622, 720896, 2, 2097158, 720896, 3, 2031623, 786432, 2, 2097159, 786432, 3, 2031624, 851968, 2, 2097160, 851968, 3, 2031625, 917504, 2, 2097161, 917504, 3, 2031626, 983040, 2, 2097162, 983040, 3, 2031627, 1048576, 2, 2097163, 1048576, 3, 2031628, 1114112, 2, 2097164, 1114112, 3, 2031629, 1179648, 2, 2097165, 1179648, 3, 2031630, 1245184, 2, 2097166, 1245184, 3, 2031631, 1310720, 2, 2097167, 1310720, 3, 2031632, 1376256, 2, 2097168, 1376256, 3, 2031633, 1441792, 2, 2097169, 1441792, 3, 2031634, 1507328, 2, 2097170, 1507328, 3, 2162688, 327680, 4, 2162689, 393216, 4, 2162690, 458752, 4, 2162691, 524288, 4, 2162692, 589824, 4, 2162693, 655360, 4, 2162694, 720896, 4, 2162695, 786432, 4, 2162696, 851968, 4, 2162697, 917504, 4, 2162698, 983040, 4, 2162699, 1048576, 4, 2162700, 1114112, 4, 2162701, 1179648, 4, 2162702, 1245184, 4, 2162703, 1310720, 4, 2162704, 1376256, 4, 2162705, 1441792, 4, 2162706, 1507328, 4)
 
 [node name="player" parent="." instance=ExtResource("5_6ungl")]
 position = Vector2(51, 335)
