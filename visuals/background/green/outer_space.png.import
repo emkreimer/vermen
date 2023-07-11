@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsrb6gu6a8a1f"
-path="res://.godot/imported/dust (copy).png-7faa4c6f54636c38db00dd20fb1ec5b4.ctex"
+uid="uid://dqfkyfwg6c33k"
+path="res://.godot/imported/outer_space.png-71161f0a4390f216c9a47ee9c80ad4a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://visuals/background/dust (copy).png"
-dest_files=["res://.godot/imported/dust (copy).png-7faa4c6f54636c38db00dd20fb1ec5b4.ctex"]
+source_file="res://visuals/background/green/outer_space.png"
+dest_files=["res://.godot/imported/outer_space.png-71161f0a4390f216c9a47ee9c80ad4a7.ctex"]
 
 [params]
 
